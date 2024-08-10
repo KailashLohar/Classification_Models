@@ -91,31 +91,31 @@ Once you are inside Jupyterlab container, you can try out two different predicti
 
 ### Steps followed in Random Forest model:
 
-1. ![#c5f015](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Check system availability`: This step checks for GPU availability, sets the device accordingly (CUDA if available, otherwise CPU), and prints the remaining GPU and CPU availability percentages.
+1. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Check system availability`: This step checks for GPU availability, sets the device accordingly (CUDA if available, otherwise CPU), and prints the remaining GPU and CPU availability percentages.
    
-2. ![#c5f015](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Load data`: loads a CSV file into a pandas DataFrame, displays the first few rows, and prints the shape of the DataFrame.
+2. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Load data`: loads a CSV file into a pandas DataFrame, displays the first few rows, and prints the shape of the DataFrame.
    
-3. ![#c5f015](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Remove salts and standardise SMILES`: This step processes the SMILES strings in a DataFrame by breaking bonds, neutralizing, and removing non-organic fragments and salts, then standardizes the remaining molecules and updates the DataFrame with the cleaned SMILES strings.
+3. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Remove salts and standardise SMILES`: This step processes the SMILES strings in a DataFrame by breaking bonds, neutralizing, and removing non-organic fragments and salts, then standardizes the remaining molecules and updates the DataFrame with the cleaned SMILES strings.
 
-4. ![#c5f015](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Balance dataset` Count the occurrences of each class in the Target column and then separates the majority class (label 0) and minority class (label 1) into two DataFrames. Down-samples the majority class to match the size of the minority class, combines the down-sampled majority class with the minority class, shuffles the combined DataFrame, and finally, rechecks the class distribution in the Target column.
+4. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Balance dataset` Count the occurrences of each class in the Target column and then separates the majority class (label 0) and minority class (label 1) into two DataFrames. Down-samples the majority class to match the size of the minority class, combines the down-sampled majority class with the minority class, shuffles the combined DataFrame, and finally, rechecks the class distribution in the Target column.
 
-5. ![#c5f015](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Train test split`: The code splits the dataset into training and testing sets, with 10% of the data reserved for testing, ensuring that the class distribution in the Target column is preserved.
+5. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Train test split`: The code splits the dataset into training and testing sets, with 10% of the data reserved for testing, ensuring that the class distribution in the Target column is preserved.
 
-6. ![#c5f015](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Visualise train test data`: The t-SNE algorithm is applied to the combined training and testing datasets for dimensionality reduction to two components. The results are visualized in a scatter plot, showing the distribution of train and test data, which is saved as an image.
+6. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Visualise train test data`: The t-SNE algorithm is applied to the combined training and testing datasets for dimensionality reduction to two components. The results are visualized in a scatter plot, showing the distribution of train and test data, which is saved as an image.
 
-7. ![#c5f015](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Get the descriptors`: 
+7. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Get the descriptors`: 
     - Descriptor Calculation: The code calculates molecular descriptors for each molecule in the dataset using the RDKit library, and handles missing values during the descriptor calculation.
     - Normalization: It normalizes the calculated descriptors using Min-Max scaling and returns the normalized dataframe, which is then printed to show its shape.
    
-8. ![#c5f015](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Remove redundant and highly correlated columns`: 
+8. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Remove redundant and highly correlated columns`: 
     - This step removes redundant columns (those with a single unique value) and highly correlated columns (correlation above 0.6) from the dataset to prevent redundancy in the model training.
     - It then saves the list of remaining column names to a CSV file for later use in the model training process.
    
-9. ![#c5f015](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Model Training`: Initializes a RandomForestClassifier with specified hyperparameters and trains it on the training data (X_train and y_train). After training, the model is saved as a joblib file for future use.
+9. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Model Training`: Initializes a RandomForestClassifier with specified hyperparameters and trains it on the training data (X_train and y_train). After training, the model is saved as a joblib file for future use.
 
-10. ![#c5f015](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Make prediction on hold out sample`: Load a pre-trained RandomForest model, normalizes the test data to match the training features, and generates predictions which are added to the test dataset for review.
+10. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Make prediction on hold out sample`: Load a pre-trained RandomForest model, normalizes the test data to match the training features, and generates predictions which are added to the test dataset for review.
 
-11. ![#c5f015](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Model Evaluation`: Importing necessary modules and computes the confusion matrix using the true and predicted labels from the test results. Uses the PrettyConfusionMatrix function to visualize and save the confusion matrix as an image file.
+11. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Model Evaluation`: Importing necessary modules and computes the confusion matrix using the true and predicted labels from the test results. Uses the PrettyConfusionMatrix function to visualize and save the confusion matrix as an image file.
 
 ![Confusion matric](devops/classification.png)
 
