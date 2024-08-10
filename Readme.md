@@ -67,7 +67,7 @@ Note: Make sure you have Docker installed on your system.
 
 6. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Visualise train test data`: The t-SNE algorithm is applied to the combined training and testing datasets for dimensionality reduction to two components. The results are visualized in a scatter plot, showing the distribution of train and test data, which is saved as an image.
 
-![Docker](devops/tsne_train_vs_test_data.png)
+![Docker](devops/tsne.png)
 
 7. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Convert data into Graph format`: Defines a custom dataset class to handle molecular data by converting SMILES strings into graph representations, storing node features, edge indices, and target values.
    
