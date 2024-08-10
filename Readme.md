@@ -47,6 +47,8 @@ Note: Make sure you have Docker installed on your system.
 
 5. ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) Stop the Container using command: `make stop-container`
 
+![Docker](devops/docker_classification.png)
+
 
 
 **Once you are inside Jupyterlab container, you can try out two different predictive models Graph Neural Network (GNN) and Random Forest (RF).**
