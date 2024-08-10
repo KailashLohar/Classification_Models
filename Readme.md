@@ -47,7 +47,7 @@ Note: Make sure you have Docker installed on your system.
 
 5. ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) Stop the Container using command: `make stop-container`
 
-![Docker](devops/docker_classification.png)
+![Docker](devops/dock.png)
 
 
 
@@ -67,6 +67,8 @@ Note: Make sure you have Docker installed on your system.
 
 6. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Visualise train test data`: The t-SNE algorithm is applied to the combined training and testing datasets for dimensionality reduction to two components. The results are visualized in a scatter plot, showing the distribution of train and test data, which is saved as an image.
 
+![Docker](devops/tsne_train_vs_test_data.png)
+
 7. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Convert data into Graph format`: Defines a custom dataset class to handle molecular data by converting SMILES strings into graph representations, storing node features, edge indices, and target values.
    
 8. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Model architecture`: This step involves defining a molecular graph neural network model with multiple convolutional layers, batch normalization, dropout, and a linear output layer. The model architecture uses global pooling methods to combine node features before making predictions, suitable for graph-based tasks.
@@ -80,7 +82,7 @@ Note: Make sure you have Docker installed on your system.
 
     - Model Saving and Logging: After each fold, the model's state and loss metrics are saved to disk. The code provides updates on the training and validation losses, learning rate, and time taken for each fold, ensuring the training process is well-documented and monitored.
 
-![model training](devops/model_training_classification.png)
+![model training](devops/training.png)
 
 10. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Training and Validation losses`: Generates subplots to visualize the training and validation losses across multiple folds, with each fold's losses displayed in separate graphs for comparison.
 
@@ -118,7 +120,7 @@ Note: Make sure you have Docker installed on your system.
 
 11. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Model Evaluation`: Importing necessary modules and computes the confusion matrix using the true and predicted labels from the test results. Uses the PrettyConfusionMatrix function to visualize and save the confusion matrix as an image file.
 
-![Confusion matric](devops/classification.png)
+![Confusion matrix](devops/cm_gnn_vs_rf.png)
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 

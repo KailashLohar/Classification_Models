@@ -45,12 +45,13 @@ start-container:
 # Enter Jupyter Container
 enter-jupyter-container:
 	@echo "You are inside the Container: \033[1;33m$(JP_CONTAINER)\033[0m"
-	@docker exec -u root -it $(JP_CONTAINER) bash || true
+	@docker exec -u root -it $(JP_CONTAINER) bash || true > /dev/null 2>&1
 
 # Enter Streamlit Container
 enter-streamlit-container:
 	@echo "You are inside the Container: \033[1;33m$(SL_CONTAINER)\033[0m"
-	@docker exec -u root -it $(SL_CONTAINER) bash || true
+	@docker exec -u root -it $(SL_CONTAINER) bash || true > /dev/null 2>&1
+	
 
 # Stop and Remove Containers
 stop-container:
