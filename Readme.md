@@ -79,6 +79,8 @@ Once you are inside Jupyterlab container, you can try out two different predicti
 
     - Model Saving and Logging: After each fold, the model's state and loss metrics are saved to disk. The code provides updates on the training and validation losses, learning rate, and time taken for each fold, ensuring the training process is well-documented and monitored.
 
+![model training](devops/model_training_classification.png)
+
 10. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Training and Validation losses`: Generates subplots to visualize the training and validation losses across multiple folds, with each fold's losses displayed in separate graphs for comparison.
 
 11. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Make prediction on hold out sample`: The code loads pre-trained models from multiple folds and predicts the target values for each batch in the test set. It averages the predictions across models to provide a final prediction for each sample.
