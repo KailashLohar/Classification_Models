@@ -1,7 +1,7 @@
 # Classification Models
 This repository offers a complete solution for designing, training, and deploying Graph Neural Network (GNN) and Random Forest (RF) models. It includes Docker configurations, Jupyter notebooks, and a Streamlit app for easy model deployment. Users can upload data to the app, receive predictions from pre-trained models, and view visualizations of molecular structures and model performance. The project is organized for ease of use, from Docker setup to model deployment, providing a streamlined approach for implementing machine learning models.
 
-![Title PNG](devops/title.png)
+![Title PNG](devops/readme_images/title.png)
 
 ## Project Structure
 
@@ -47,7 +47,7 @@ Note: Make sure you have Docker installed on your system.
 
 5. ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) Stop the Container using command: `make stop-container`
 
-![Docker](devops/dock.png)
+![Docker](devops/readme_images/dock.png)
 
 
 
@@ -67,7 +67,7 @@ Note: Make sure you have Docker installed on your system.
 
 6. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Visualise train test data`: The t-SNE algorithm is applied to the combined training and testing datasets for dimensionality reduction to two components. The results are visualized in a scatter plot, showing the distribution of train and test data, which is saved as an image.
 
-![Docker](devops/tsne.png)
+![Docker](devops/readme_images/tsne.png)
 
 7. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Convert data into Graph format`: Defines a custom dataset class to handle molecular data by converting SMILES strings into graph representations, storing node features, edge indices, and target values.
    
@@ -82,7 +82,7 @@ Note: Make sure you have Docker installed on your system.
 
     - Model Saving and Logging: After each fold, the model's state and loss metrics are saved to disk. The code provides updates on the training and validation losses, learning rate, and time taken for each fold, ensuring the training process is well-documented and monitored.
 
-![model training](devops/training.png)
+![model training](devops/readme_images/training.png)
 
 10. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Training and Validation losses`: Generates subplots to visualize the training and validation losses across multiple folds, with each fold's losses displayed in separate graphs for comparison.
 
@@ -120,7 +120,7 @@ Note: Make sure you have Docker installed on your system.
 
 11. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Model Evaluation`: Importing necessary modules and computes the confusion matrix using the true and predicted labels from the test results. Uses the PrettyConfusionMatrix function to visualize and save the confusion matrix as an image file.
 
-![Confusion matrix](devops/cm_gnn_vs_rf.png)
+![Confusion matrix](devops/readme_images/cm_gnn_vs_rf.png)
 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
 - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - 
@@ -130,7 +130,7 @@ Note: Make sure you have Docker installed on your system.
 # Model Deployment
 Model deployment using Docker and Streamlit involves creating a user-friendly web interface where users can input data (e.g., SMILES strings or CSV files) and receive predictions from pre-trained machine learning models. The provided code demonstrates how to build a Streamlit app that allows users to upload a CSV file or enter a SMILES string, which is then processed by both a Graph Neural Network (GNN) and a Random Forest (RF) model. The app displays predictions alongside molecular structures and provides insights into the model's performance, making the deployment accessible and interactive for users.
 
-![model deployment](devops/streamlit_classification.png)
+![model deployment](devops/readme_images/streamlit_classification.png)
 
 
 ## Author
