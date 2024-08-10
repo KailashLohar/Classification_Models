@@ -1,7 +1,7 @@
 # Classification Models
 This repo consist of end to end design of Graph Neural Network and Random Forest models including model deployment using Docker.
 
-![Title](devops/title.png)
+![Title PNG](devops/title.png)
 
 ## Project Structure
 
