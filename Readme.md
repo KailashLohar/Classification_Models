@@ -1,5 +1,5 @@
 # Classification Models
-This repo consist of end to end design of Graph Neural Network and Random Forest models including model deployment using Docker.
+This repository offers a complete solution for designing, training, and deploying Graph Neural Network (GNN) and Random Forest (RF) models. It includes Docker configurations, Jupyter notebooks, and a Streamlit app for easy model deployment. Users can upload data to the app, receive predictions from pre-trained models, and view visualizations of molecular structures and model performance. The project is organized for ease of use, from Docker setup to model deployment, providing a streamlined approach for implementing machine learning models.
 
 ![Title PNG](devops/title.png)
 
