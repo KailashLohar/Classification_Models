@@ -101,7 +101,7 @@ Once you are inside Jupyterlab container, you can try out two different predicti
 
 5. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Train test split`: The code splits the dataset into training and testing sets, with 10% of the data reserved for testing, ensuring that the class distribution in the Target column is preserved.
 
-6. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Visualise train test data`: The t-SNE algorithm is applied to the combined training and testing datasets for dimensionality reduction to two components. The results are visualized in a scatter plot, showing the distribution of train and test data, which is saved as an image.
+6. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Visualise train test data`: The t-SNE algorithm is applied to the combined training and testing datasets for dimensionality reduction to two components. Results are visualized in a scatter plot, showing the distribution of train and test data, which is saved as an image.
 
 7. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Get the descriptors`: 
     - Descriptor Calculation: The code calculates molecular descriptors for each molecule in the dataset using the RDKit library, and handles missing values during the descriptor calculation.
