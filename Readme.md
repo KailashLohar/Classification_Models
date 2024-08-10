@@ -49,10 +49,9 @@ Note: Make sure you have Docker installed on your system.
 
 
 
-## Instruction
-Once you are inside Jupyterlab container, you can try out two different predictive models Graph Neural Network (GNN) and Random Forest (RF).
+**Once you are inside Jupyterlab container, you can try out two different predictive models Graph Neural Network (GNN) and Random Forest (RF).**
 
-### Steps followed in Graph Neural Network model:
+## Steps followed in Graph Neural Network model:
 
 1. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Check system availability`: This step checks for GPU availability, sets the device accordingly (CUDA if available, otherwise CPU), and prints the remaining GPU and CPU availability percentages.
    
@@ -89,7 +88,7 @@ Once you are inside Jupyterlab container, you can try out two different predicti
 
 
 
-### Steps followed in Random Forest model:
+## Steps followed in Random Forest model:
 
 1. ![#c5f015](https://via.placeholder.com/15/c5f015/c5f015.png) `Check system availability`: This step checks for GPU availability, sets the device accordingly (CUDA if available, otherwise CPU), and prints the remaining GPU and CPU availability percentages.
    
