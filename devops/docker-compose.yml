@@ -1,12 +1,10 @@
-version: '3.8'
-
 services:
   jupyterlab:
     build:
       context: ./jupyterlab
       dockerfile: Dockerfile
-    image: "${JP_IMAGE}"
-    container_name: "${JP_CONTAINER}"
+    image: ${JP_IMAGE}
+    container_name: ${JP_CONTAINER}
     ports:
       - "${JP_PORT}:7777"
     volumes:
@@ -14,17 +12,61 @@ services:
     labels:
       - "description=Jupyterlab for MLModel"
       - "port=7777"
+    networks:
+      - ml_model
+
+  mlflow:
+    build:
+      context: ./mlflow
+      dockerfile: Dockerfile
+    image: ${MF_IMAGE}
+    container_name: ${MF_CONTAINER}
+    ports:
+      - "${MF_PORT}:5001"
+    volumes:
+      - "../main:/mlflow/mlruns"
+    labels:
+      - "description=MlFlow for MLModel"
+      - "port=5001"
+    networks:
+      - ml_model
+
+  postgres_db:
+    build:
+      context: ./postgresql
+      dockerfile: Dockerfile
+    image: ${PG_IMAGE}
+    container_name: ${PG_CONTAINER}
+    environment:
+      POSTGRES_DB: mlflow_db
+      POSTGRES_USER: kailash
+      POSTGRES_PASSWORD: ml_model
+    ports:
+      - "${PG_PORT}:5432"
+    volumes:
+      - ./../data:/var/lib/postgresql/data
+    labels:
+      - "description=PostgreSQL_for_Amination"
+      - "port=5432"
+    networks:
+      - ml_model
 
   streamlit:
     build:
       context: ./streamlit
       dockerfile: Dockerfile
-    image: "${SL_IMAGE}"
-    container_name: "${SL_CONTAINER}"
+    image: ${SL_IMAGE}
+    container_name: ${SL_CONTAINER}
     ports:
       - "${SL_PORT}:8501"
     volumes:
       - "../main/my_streamlit_app:/home"
     labels:
-      - "description=Streamlit App"
+      - "description=Streamlit App for MLModel"
       - "port=8501"
+    networks:
+      - ml_model
+
+networks:
+  ml_model:
+    driver: bridge

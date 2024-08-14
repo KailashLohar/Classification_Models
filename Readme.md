@@ -1,7 +1,7 @@
 # Classification Models
 This repository offers a complete solution for designing, training, and deploying Graph Neural Network (GNN) and Random Forest (RF) models. It includes Docker configurations, Jupyter notebooks, and a Streamlit app for easy model deployment. Users can upload data to the app, receive predictions from pre-trained models, and view visualizations of molecular structures and model performance. The project is organized for ease of use, from Docker setup to model deployment, providing a streamlined approach for implementing machine learning models.
 
-![Title PNG](devops/readme_images/title.png)
+![Title PNG](devops/readme_images/title1.png)
 
 ## Project Structure
 
@@ -47,7 +47,7 @@ Note: Make sure you have Docker installed on your system.
 
 5. ![#ffa500](https://via.placeholder.com/15/ffa500/ffa500.png) Stop the Container using command: `make stop-container`
 
-![Docker](devops/readme_images/dock.png)
+![Docker](devops/readme_images/docker_class.png)
 
 
 
@@ -83,6 +83,11 @@ Note: Make sure you have Docker installed on your system.
     - Model Saving and Logging: After each fold, the model's state and loss metrics are saved to disk. The code provides updates on the training and validation losses, learning rate, and time taken for each fold, ensuring the training process is well-documented and monitored.
 
 ![model training](devops/readme_images/training.png)
+
+10. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Track the progress in mlflow`: Log required parameters in mlflow and link mlflow container to postgresql for robust database manamgement instead of using default mysql setting of mlflow.
+
+![model training](devops/readme_images/mlflow.png)
+
 
 10. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Training and Validation losses`: Generates subplots to visualize the training and validation losses across multiple folds, with each fold's losses displayed in separate graphs for comparison.
 
