@@ -84,7 +84,7 @@ Note: Make sure you have Docker installed on your system.
 
 ![model training](devops/readme_images/training.png)
 
-10. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Track the progress in mlflow`: Log required parameters in mlflow and link mlflow container to postgresql for robust database manamgement instead of using default mysql setting of mlflow.
+10. ![#DA70D6](https://via.placeholder.com/15/DA70D6/DA70D6.png) `Track the progress in mlflow`: Track the progress in MLflow by logging the necessary parameters and connecting the MLflow container to PostgreSQL for more reliable database management, rather than using MLflow's default SQLite setting.
 
 ![model training](devops/readme_images/mlflow.png)
 
