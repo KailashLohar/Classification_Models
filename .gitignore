@@ -1,1 +1,4 @@
 .DS_Store
+.Trash-0/
+*.ipynb_checkpoints/
+__pycache__/
