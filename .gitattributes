@@ -1,1 +1,2 @@
 main/my_streamlit_app/exahustive_search/paper_checkpoints/* filter=lfs diff=lfs merge=lfs -text
+main/my_streamlit_app/exahustive_search/paper_checkpoints/ecfp4_with_counts_with_rank/weights.ckpt filter=lfs diff=lfs merge=lfs -text
