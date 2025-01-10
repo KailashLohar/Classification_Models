@@ -1,0 +1,15 @@
+artifact_uri: file:///home/GNN/mlruns/0/9e1b318bff2d4982bc80ebbea551ef3b/artifacts
+end_time: 1726410378177
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 9e1b318bff2d4982bc80ebbea551ef3b
+run_name: rambunctious-kit-325
+run_uuid: 9e1b318bff2d4982bc80ebbea551ef3b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726410237196
+status: 3
+tags: []
+user_id: root

@@ -1,0 +1,29 @@
+name: fastapi_env
+channels:
+  - defaults
+  - pytorch
+  - conda-forge
+dependencies:
+  - python=3.8
+  - numpy
+  - fastapi
+  - rdkit
+  - pandas
+  - seaborn
+  - tqdm
+  - pytorch
+  - pip
+  - pip:
+      - jupyterlab
+      - scikit-learn
+      - matplotlib
+      - ogb
+      - imblearn
+      - torch-geometric
+      - torch_optimizer
+      - standardiser
+      - uvicorn
+      - python-multipart
+      - fastapi
+      - mlflow
+

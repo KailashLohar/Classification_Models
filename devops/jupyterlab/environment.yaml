@@ -1,17 +1,18 @@
 name: classification
 channels:
+  - defaults
   - pytorch
   - conda-forge
-  - defaults
 dependencies:
   - python=3.8.10
-  - pytorch
-  - rdkit
   - numpy
+  - rdkit
   - tqdm
   - pandas
   - scipy
   - graphviz
+  - pytorch
+  - torchvision
   - pip
   - pip:
     - jupyterlab
@@ -29,4 +30,3 @@ dependencies:
     - torch_lr_finder
     - standardiser
     - mlflow
-

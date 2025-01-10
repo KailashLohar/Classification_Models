@@ -1,0 +1,14 @@
+SMILES,Target
+C=CC(=O)OCC(CO)(COC(=O)C=C)COC(=O)C=C,1
+Nc1ccc(N)cc1,1
+Nc1ccccc1,1
+O=C(NCNC(=O)NC1C(=O)NC(=O)N1CO)NC1C(=O)NC(=O)N1CO,1
+Clc1ccccc1,0
+C=C(C)C1CC=C(C)CC1,0
+CC(C)(C)c1ccc(CCC=O)cc1,1
+CCCOC(=O)c1cc(O)c(O)c(O)c1,1
+CCCCCC,0
+C=CCc1ccc(O)c(OC)c1,1
+CCCCCC(=Cc1ccccc1)CO,1
+CCCOC(=O)c1ccc(O)cc1,0
+O=c1[nH]sc2ccccc12,1

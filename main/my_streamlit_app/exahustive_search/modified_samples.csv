@@ -1,0 +1,7 @@
+generated_smiles,tanimoto
+COC(=O)CCCC(C)C(=O)OC,0.81
+COC(=O)CCC(C)C(=O)OOC,0.76
+COC(=O)CCCCC(C)C(=O)OC,0.74
+COC(=O)C(C)CCC(=O)O[Si],0.72
+COC(=O)C(C)CCC(=O)C(=O)OC,0.68
+COC(=O)[C@H](C)CCC(=O)O[Si](C)(C)C,0.64

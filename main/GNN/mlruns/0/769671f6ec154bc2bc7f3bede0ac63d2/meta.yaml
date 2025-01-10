@@ -1,0 +1,15 @@
+artifact_uri: file:///home/GNN/mlruns/0/769671f6ec154bc2bc7f3bede0ac63d2/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 769671f6ec154bc2bc7f3bede0ac63d2
+run_name: rare-foal-513
+run_uuid: 769671f6ec154bc2bc7f3bede0ac63d2
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726205936838
+status: 1
+tags: []
+user_id: root

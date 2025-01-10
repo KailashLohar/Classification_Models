@@ -9,6 +9,7 @@ services:
       - "${JP_PORT}:7777"
     volumes:
       - "../main:/home"
+      - "../mlflow_files:/mlflow/mlruns"
     labels:
       - "description=Jupyterlab for MLModel"
       - "port=7777"
@@ -24,30 +25,27 @@ services:
     ports:
       - "${MF_PORT}:5001"
     volumes:
-      - "../main:/mlflow/mlruns"
+      - "../mlflow_files:/mlflow/mlruns"
     labels:
       - "description=MlFlow for MLModel"
       - "port=5001"
     networks:
       - ml_model
 
-  postgres_db:
+  fastapi:
     build:
-      context: ./postgresql
+      context: ./fastapi
       dockerfile: Dockerfile
-    image: ${PG_IMAGE}
-    container_name: ${PG_CONTAINER}
-    environment:
-      POSTGRES_DB: mlflow_db
-      POSTGRES_USER: kailash
-      POSTGRES_PASSWORD: ml_model
+    image: ${FA_IMAGE}
+    container_name: ${FA_CONTAINER}
     ports:
-      - "${PG_PORT}:5432"
+      - "${FA_PORT}:8502"
     volumes:
-      - ./../data:/var/lib/postgresql/data
+      - "../main/my_fastapi_app:/home"
+      - "../mlflow_files:/mlflow/mlruns"
     labels:
-      - "description=PostgreSQL_for_Amination"
-      - "port=5432"
+      - "description=FastAPI for MLModel"
+      - "port=8502"
     networks:
       - ml_model
 

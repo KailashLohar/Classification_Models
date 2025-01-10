@@ -1,0 +1,15 @@
+artifact_uri: /mlflow/mlruns/900649188862028013/6d2a35ab62cf4b45887e89f10a7a3781/artifacts
+end_time: 1726209837850
+entry_point_name: ''
+experiment_id: '900649188862028013'
+lifecycle_stage: active
+run_id: 6d2a35ab62cf4b45887e89f10a7a3781
+run_name: 120756_GNN_Classifier
+run_uuid: 6d2a35ab62cf4b45887e89f10a7a3781
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726209476672
+status: 3
+tags: []
+user_id: kailash

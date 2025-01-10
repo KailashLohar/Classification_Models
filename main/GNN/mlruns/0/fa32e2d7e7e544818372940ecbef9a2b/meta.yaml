@@ -1,0 +1,15 @@
+artifact_uri: file:///home/GNN/mlruns/0/fa32e2d7e7e544818372940ecbef9a2b/artifacts
+end_time: 1726409140154
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: fa32e2d7e7e544818372940ecbef9a2b
+run_name: luxuriant-steed-841
+run_uuid: fa32e2d7e7e544818372940ecbef9a2b
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726408638727
+status: 3
+tags: []
+user_id: root

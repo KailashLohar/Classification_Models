@@ -1,0 +1,6 @@
+artifact_location: /mlflow/mlruns/427085569054700277
+creation_time: 1726223306651
+experiment_id: '427085569054700277'
+last_update_time: 1726223306651
+lifecycle_stage: active
+name: GNN_classifier

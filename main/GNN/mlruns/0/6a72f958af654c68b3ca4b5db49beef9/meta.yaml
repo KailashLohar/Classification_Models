@@ -1,0 +1,15 @@
+artifact_uri: file:///home/GNN/mlruns/0/6a72f958af654c68b3ca4b5db49beef9/artifacts
+end_time: 1726409826072
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 6a72f958af654c68b3ca4b5db49beef9
+run_name: skillful-squid-590
+run_uuid: 6a72f958af654c68b3ca4b5db49beef9
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726409415640
+status: 3
+tags: []
+user_id: root

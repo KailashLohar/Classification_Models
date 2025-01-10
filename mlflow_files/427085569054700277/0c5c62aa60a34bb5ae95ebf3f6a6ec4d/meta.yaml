@@ -1,0 +1,15 @@
+artifact_uri: /mlflow/mlruns/427085569054700277/0c5c62aa60a34bb5ae95ebf3f6a6ec4d/artifacts
+end_time: 1736488004791
+entry_point_name: ''
+experiment_id: '427085569054700277'
+lifecycle_stage: active
+run_id: 0c5c62aa60a34bb5ae95ebf3f6a6ec4d
+run_name: kailash_GNN_Classifier_10012025_111525
+run_uuid: 0c5c62aa60a34bb5ae95ebf3f6a6ec4d
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1736487934817
+status: 3
+tags: []
+user_id: '*******'

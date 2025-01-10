@@ -1,0 +1,15 @@
+artifact_uri: file:///home/GNN/mlruns/0/0a4ccdbff7444c86a5ee086b4163bb57/artifacts
+end_time: 1726410218264
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 0a4ccdbff7444c86a5ee086b4163bb57
+run_name: dazzling-lamb-714
+run_uuid: 0a4ccdbff7444c86a5ee086b4163bb57
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726410082450
+status: 3
+tags: []
+user_id: root

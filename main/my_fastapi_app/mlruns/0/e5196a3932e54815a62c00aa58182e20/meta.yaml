@@ -1,0 +1,15 @@
+artifact_uri: file:///home/my_fastapi_app/mlruns/0/e5196a3932e54815a62c00aa58182e20/artifacts
+end_time: null
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: e5196a3932e54815a62c00aa58182e20
+run_name: auspicious-roo-353
+run_uuid: e5196a3932e54815a62c00aa58182e20
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1726213252495
+status: 1
+tags: []
+user_id: root

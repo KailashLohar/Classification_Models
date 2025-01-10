@@ -5,7 +5,7 @@ FROM python:3.8-slim
 LABEL maintainer="Kailash Lohar <kailashlohariitkgp@gmail.com>"
 
 # Install MLflow and dependencies
-RUN pip install mlflow psycopg2-binary
+RUN pip install mlflow
 
 # Set Working Directory
 WORKDIR /mlflow
@@ -14,4 +14,4 @@ WORKDIR /mlflow
 EXPOSE 5001
 
 # Set Default Command for starting MLflow
-CMD ["mlflow", "server", "--backend-store-uri", "postgresql://kailash:ml_model@postgres_db:5432/mlflow_db", "--default-artifact-root", "/mlflow/mlruns", "--host=0.0.0.0", "--port=5001"]
+CMD ["mlflow", "server", "--backend-store-uri", "file:/mlflow/mlruns", "--default-artifact-root", "/mlflow/mlruns", "--host=0.0.0.0", "--port=5001"]

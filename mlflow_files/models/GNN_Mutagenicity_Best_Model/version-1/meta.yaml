@@ -1,0 +1,14 @@
+aliases: []
+creation_timestamp: 1726206629615
+current_stage: None
+description: ''
+last_updated_timestamp: 1726206629615
+name: GNN_Mutagenicity_Best_Model
+run_id: 8da8a3c6b7934210b1acdb427b21ac8f
+run_link: ''
+source: /mlflow/mlruns/900649188862028013/8da8a3c6b7934210b1acdb427b21ac8f/artifacts/best_model_fold_5
+status: READY
+status_message: null
+storage_location: /mlflow/mlruns/900649188862028013/8da8a3c6b7934210b1acdb427b21ac8f/artifacts/best_model_fold_5
+user_id: null
+version: 1

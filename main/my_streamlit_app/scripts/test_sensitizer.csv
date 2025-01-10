@@ -1,0 +1,11 @@
+Smiles,Ground Truth
+O=C(C=C)OCCCCCCCCCCOC(=O)C=C,Sensitizer
+COC(=O)CCC(C)C(=O)OC,Non-sensitizer
+C1(OCC)C(CCCC1C)C,Sensitizer
+C1(C(=O)OCC(C)(OC(C)C(C)=CC(C)C)C)CC1,Sensitizer
+CNC(N)=O,Non-sensitizer
+CC1OC(OC2C(CO)OC(OC3C(CO)OC(O)C(O)C3O)C(O)C2O)C(O)C(O)C1NC1C=C(CO)C(O)C(O)C1O,Non-sensitizer
+C1=CC(=C(C=C1[N+](=O)[O-])Cl)[N+](=O)[O-],Sensitizer
+C(C(C#N)CBr)CBr,Sensitizer
+CC(O)(CS(=O)(=O)c1ccc(F)cc1)C(=O)Nc1ccc(C#N)c(C(F)(F)F)c1,Non-sensitizer
+CC(C)COC(=O)C=CC1=CC=C(C=C1)OC,Sensitizer
