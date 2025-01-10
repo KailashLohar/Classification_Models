@@ -2,3 +2,4 @@
 .Trash-0/
 *.ipynb_checkpoints/
 __pycache__/
+main/my_streamlit_app/exahustive_search/paper_checkpoints/
