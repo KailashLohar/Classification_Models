@@ -1,6 +1,0 @@
-artifact_location: /mlflow/mlruns/900649188862028013
-creation_time: 1726205410407
-experiment_id: '900649188862028013'
-last_update_time: 1726205410407
-lifecycle_stage: active
-name: 1_GNN_classifier_mutagenicity
